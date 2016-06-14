@@ -34,7 +34,7 @@ def find_version(*parts):
 
 
 setup(
-    name='django-fluent-pages',
+    name='sigmacms-fluent-pages',
     version=find_version('fluent_pages', '__init__.py'),
     license='Apache 2.0',
 
@@ -43,7 +43,7 @@ setup(
         'django-mptt>=0.5.5, != 0.8.5',    # Still supporting Django 1.5, use mptt 0.6 for Python 3 support. Workaround https://github.com/django-mptt/django-mptt/issues/494
         'django-parler>=1.6.1',            # Needed for Django 1.9 compatibility
         'django-polymorphic>=0.9.1',       # Needed for Django 1.8 compatibility
-        'django-polymorphic-tree>=1.2.3',  # Needed for Django 1.9 compatibility
+        'sigmacms-polymorphic-tree>=1.2.3',  # Needed for Django 1.9 compatibility
         'django-slug-preview>=1.0.1',
         'django-tag-parser>=2.1',
         'future>=0.12.2',
@@ -63,8 +63,8 @@ setup(
     author='Diederik van der Boor',
     author_email='opensource@edoburu.nl',
 
-    url='https://github.com/edoburu/django-fluent-pages',
-    download_url='https://github.com/edoburu/django-fluent-pages/zipball/master',
+    url='https://github.com/sigmacms/sigmacms-fluent-pages',
+    download_url='https://github.com/sigmacms/sigmacms-fluent-pages/zipball/master',
 
     packages=find_packages(exclude=('example*',)),
     include_package_data=True,
